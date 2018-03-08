@@ -6,6 +6,10 @@
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType></DebugType>
+    <DefineConstants>TRACE;RELEASE;</DefineConstants>
     <DocumentationFile>bin\Release\netstandard1.0\Plugin.LocalNotifications.Abstractions.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>TRACE;DEBUG;</DefineConstants>
   </PropertyGroup>
 </Project>

@@ -6,7 +6,11 @@
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType></DebugType>
+    <DefineConstants>TRACE;RELEASE;PCL</DefineConstants>
     <DocumentationFile>bin\Release\netstandard1.0\Plugin.LocalNotifications.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>TRACE;DEBUG;PCL</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Plugin.LocalNotifications.Abstractions\Plugin.LocalNotifications.Abstractions.csproj" />
